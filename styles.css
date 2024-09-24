@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.controls {
+    margin: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px; /* Space between input elements */
+}
+
+.grid-container {
+    display: grid;
+    width: 90vw; /* Dynamic width */
+    height: 90vw; /* Dynamic height to maintain square cells */
+    max-width: 90vh; /* Ensure the grid doesn't overflow the viewport */
+    max-height: 90vh; /* Ensure the grid doesn't overflow the viewport */
+    /*gap: 10px;*/ /*can not use gap, it distorts the shapes */
+    margin: 10px;
+    border: solid 1px lightblue; 
+}
+
+.shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Center the shapes within their grid cells */
+}
+
+.landscape-rectangle {
+    width: 80%; /* Width relative to cell */
+    height: 60%; /* Height relative to cell */
+}
+
+.portrait-rectangle {
+    width: 50%; /* Width relative to cell */
+    height: 80%; /* Height relative to cell */
+}
+
+.square {
+    width: 70%; /* Width relative to cell */
+    height: 70%; /* Height relative to cell */
+}
+
+.circle {
+    width: 70%; /* Width relative to cell */
+    height: 70%; /* Height relative to cell */
+    border-radius: 50%;
+}
+
+.border-cell {
+    width: 80%; /* Width relative to cell */
+    height: 80%; /* Height relative to cell */
+    /*margin: 1px;*/
+    /*background-color: lightgray;*/
+    border: 1px solid lightgrey;
+}
+
+/* Rainbow Colors */
+.color-red { background-color: #FF0000; }
+.color-orange { background-color: #FF7F00; }
+.color-yellow { background-color: #FFFF00; }
+.color-green { background-color: #00FF00; }
+.color-blue { background-color: #0000FF; }
+.color-indigo { background-color: #4B0082; }
+.color-violet { background-color: #8B00FF; }
